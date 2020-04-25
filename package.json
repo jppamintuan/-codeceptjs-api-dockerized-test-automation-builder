@@ -1,0 +1,16 @@
+{
+  "name": "CodeceptJSAPIDockerizedTest",
+  "description": "Dockerized API Automation Testing using CodeceptJS",
+  "version": "0.0.1",
+  "author": "JP Pamintuan",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "codeceptjs": "2.5.0",
+    "faker": "4.1.0",
+    "mocha": "7.1.1",
+    "mochawesome": "6.1.0"
+  },
+  "scripts": {
+    "test": "codeceptjs run --steps --reporter mochawesome"
+  }
+}
