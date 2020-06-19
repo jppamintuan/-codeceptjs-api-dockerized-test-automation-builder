@@ -15,6 +15,8 @@ exports.config = {
 		"reportDir": "./reports",
 		"overwrite": "false",
 		"timestamp": "mm-dd-yyyy-HHMMss",
+		"inline": "true",
+		"cdn": "true",
 		}
 	},
 	name: "Dockerized Rest API automation testing",
