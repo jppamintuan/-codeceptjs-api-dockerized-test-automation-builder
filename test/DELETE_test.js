@@ -14,7 +14,7 @@ Before(async () => {
 
 	createdUser = await I.sendPostRequest('/api/users', userData);
 });
-//test scm polling
+//test scm polling 2
 Scenario('Verify deleting a user', async () => {
 	const res = await I.sendDeleteRequest(`/api/users/${createdUser.data.id}`);
 	expect(res.status).to.eql(204);
