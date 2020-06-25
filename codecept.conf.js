@@ -12,6 +12,7 @@ exports.config = {
 	bootstrap: null,
 	mocha: {
 		"reporterOptions": {
+		"enableCharts": "true",
 		"reportDir": "./reports",
 		"overwrite": "false",
 		"timestamp": "mm-dd-yyyy-HHMMss",
