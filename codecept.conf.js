@@ -4,9 +4,6 @@ exports.config = {
 	helpers: {
 		REST: {
 			endpoint: "https://reqres.in",
-			onRequest: () => {
-				//request.headers.auth = "123";
-			}
 		}
 	},
 	bootstrap: null,
