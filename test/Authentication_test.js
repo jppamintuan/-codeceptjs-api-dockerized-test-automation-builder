@@ -1,12 +1,16 @@
 const expect = require('chai').expect;
 const {I} = inject();
 
+// Data
 var auth_data = require('../data/auth.json');
 
+// Feature to be tested
 Feature('Authentication tests');
 
+// Test Actions
 Scenario('Verify successful login', async () => {
 	const res = await I.sendPostRequest(auth_data.Login.url, auth_data.Login.successful.credentials);
+	// Test Assertions
 	expect(res.status).to.eql(auth_data.Login.successful.status);
 	expect(res.data.token).to.eql(auth_data.Login.successful.token);
 });
