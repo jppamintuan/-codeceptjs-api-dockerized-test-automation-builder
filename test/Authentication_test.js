@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 const {I} = inject();
 
-// Data
+// Data a
 let auth_data = require('../data/auth.json');
 
 // Feature to be tested
