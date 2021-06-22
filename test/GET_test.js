@@ -10,7 +10,7 @@ Scenario('Verify a successful call', async () => {
 
 Scenario('Verify a not found call', async () => {
 	const res = await I.sendGetRequest('/api/users/266');
-	expect(res.status).to.eql(404);
+	expect(res.status).to.eql(403);
 });
 
 Scenario('Verify getting a single user', async () => {

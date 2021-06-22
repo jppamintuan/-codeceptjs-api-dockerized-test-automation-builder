@@ -2,10 +2,10 @@ const expect = require('chai').expect;
 const {I} = inject();
 
 // Data
-var auth_data = require('../data/auth.json');
+let auth_data = require('../data/auth.json');
 
 // Feature to be tested
-Feature('Authentication tests');
+Feature('AUTHENTICATION test');
 
 // Test Actions
 Scenario('Verify successful login', async () => {
